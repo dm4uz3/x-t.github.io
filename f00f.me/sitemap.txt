@@ -1,0 +1,12 @@
+https://f00f.me/
+https://f00f.me/index.php
+https://f00f.me/about.php
+https://f00f.me/index-apache.php
+https://f00f.me/index-nginx.php
+https://f00f.me/text/index.php
+https://f00f.me/text/about.php
+https://f00f.me/text/contact.php
+https://f00f.me/text/support.php
+https://f00f.me/blog/2018.php
+https://f00f.me/blog/rss.xml
+
