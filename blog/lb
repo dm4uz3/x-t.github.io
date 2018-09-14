@@ -40,7 +40,7 @@ getTitle() { \
 
 postNew() { \
 	mkdir -p "$draftdir"
-	echo -e "<h2 id='$url'>$title</h2>\n<small>[<a href=\"$blogfile#$url\">link</a>&mdash;<a href=\"blog/$url.html\">standalone</a>]</small>\n\n<++>" >> "$draftdir"/$url.html && $EDITOR "$draftdir"/$url.html
+	echo -e "<h2 id='$url'>$title</h2>\n<small>[<a href=\"2018.html#$url\">link</a>&mdash;<a href=\"blog/$url.html\">standalone</a>]</small>\n\n<++>" >> "$draftdir"/$url.html && $EDITOR "$draftdir"/$url.html
 	}
 
 finalize() { \
