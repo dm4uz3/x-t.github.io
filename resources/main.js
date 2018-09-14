@@ -1,8 +1,8 @@
-/*******************************************
- * Licensed under BSD-2-Clause
- * More info - https://f00f.me/src
- * License - https://f00f.me/src/LICENSE.txt
- *******************************************/
+/***********************************************
+ * This file is a part of the f00f.me project
+ * More info - https://x-t.github.io/source.html
+ * License - https://x-t.github.io/LICENSE.txt
+ ***********************************************/
 
 
 var i = 0;
@@ -67,4 +67,4 @@ window.onload = function() {
 console.log("Hello.");
 console.log("I don't hire. In fact, legally (and financially) I can't.");
 console.log("But you're free to look.");
-console.log("Find the licensing information here -> https://f00f.me/src");
+console.log("Find the licensing information here -> https://x-t.github.io/source.html");
