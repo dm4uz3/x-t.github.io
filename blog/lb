@@ -2,7 +2,7 @@
 
 # Set your personal data here:
 rssfile="rss.xml"
-blogfile="2018.php"
+blogfile="src_2018.html"
 website="https://f00f.me/"
 indexfile="blogindex.php"
 stylesheet="..\/..\/resources\/style.css" # Characters should be escaped for this variable.
