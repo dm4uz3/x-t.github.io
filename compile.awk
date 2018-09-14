@@ -2,7 +2,7 @@ function ReadFile(file)
 {
     x = ""
     while ((getline y < file) > 0) {
-        x = x FS y
+        x = x FS y FS "\n"
     }
     return x
 }
