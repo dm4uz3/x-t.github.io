@@ -12,6 +12,21 @@
 <!-- LB -->
 
 <item>
+<title>Cool tools, pt. 2</title>
+<guid>https://f00f.me/src_2018.html#cool-tools-pt-2</guid>
+<pubDate>Fri, 14 Sep 2018 21:25:49 +0300</pubDate>
+<description><![CDATA[
+<p>This one is useful when you want to copy some source code to an HTML page (like these series) and you want to do it from a shell.</p>
+<pre>
+#!/bin/bash
+cat $1 | sed 's/&bsol;&amp;/&bsol;&amp;amp&bsol;;/g; s/&lt;/&bsol;&amp;lt&bsol;;/g; s/&gt;/&bsol;&amp;gt&bsol;;/g; s/&bsol;&bsol;/&bsol;&amp;bsol&bsol;;/g'
+</pre>
+<br>
+]]></description>
+</item>
+
+
+<item>
 <title>New website, why and how</title>
 <guid>https://f00f.me/src_2018.html#new-website-why-and-how</guid>
 <pubDate>Fri, 14 Sep 2018 20:39:51 +0300</pubDate>
