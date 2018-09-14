@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>cmp</title>
+    <title>cmp - source</title>
      <meta name="description" content="I'm cmp."> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link id="fontawesome" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <link rel="stylesheet" href="/resources/style.css"> <script src="/resources/main.js"></script> <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
 </head>
 <body>
-     <noscript>This page requires Javascript to be viewed properly.</noscript>
      <div class="overlay" id="contactEmail">     <div class="overlayContent">         <noscript><b>--- Contact ---</b></noscript>         <div class="overlayClose" onclick="document.getElementById('contactEmail').style.display = 'none'"><span class="fas fa-times"></span></div>         <h3>Contact me via e-mail</h3>         <p><span class="fas fa-envelope-open"></span> Address: <a href="mailto:cmp@airmail.cc">cmp@airmail.cc</a></p>         <p><span class="fas fa-shield-alt"></span> <a href="/resources/pubkey.txt">GPG Public key</a></p>         <h3>Contact me on other platforms</h3>         <p>XMPP: <a href="xmpp:cmp@ed1.club">cmp@ed1.club</a></p>         <p>Matrix: <a href="https://matrix.org">@movzx:matrix.org</a></p>         <p>Discord: <a href="https://discordapp.com">@zxyz#8479</a></p>     </div> </div>  <div class="overlay" id="support">     <div class="overlayContent">         <noscript><b>--- Support ---</b></noscript>         <div class="overlayClose" onclick="document.getElementById('support').style.display = 'none'"><span class="fas fa-times"></span></div>         <h3>If you're considering supporting me</h3>         <p><em>One, why? Two, you probably shouldn't.</em></p>         <p>But a good way to do so would be to sign up for DigitalOcean using my referral link<span class="sup">[1]</span></p>         <p><span class="fab fa-digital-ocean"></span> <a href="https://m.do.co/c/0438eea40e50">Referral link</a></p>         <p>You can also go into an Apple store and leave this running in the browser:</p>         <p><span class="fab fa-bitcoin"></span> <a href="https://authedmine.com/media/miner.html?key=cDLSvt8FelYvt38hNrr2dFGv9jnAatbd">Worthless crypto mining</a></p>         <h4>Consider throwing money directly here instead</h4>         <p><span class="fas fa-money-bill-alt"></span> <a href="https://supporters.eff.org/donate/donate-eff-4">EFF</a></p>         <p><span class="fas fa-money-bill-alt"></span> <a href="https://my.fsf.org/join">FSF</a></p>         <p><small>[1]: You get $10 dollars in credit, and once you spend $25 I also get $25.</small></p>     </div> </div>
      <div class="navbar" id="MobileBar">     <a href="/"><span class="fas fa-home"></span></a>     <a href="/about.html"><span class="fas fa-question-circle"></span></a>     <a href="https://github.com/x-t"><span class="fab fa-github"></span></a>     <a href="/blog/2018.html"><span class="fas fa-rss"></span></a>     <a href="#" class="showContact1" style="float:right;"><span class="fas fa-id-card"></span></a>     <a href="#" class="showSupport" style="float:right;"><span class="fas fa-dollar-sign"></span></a> </div>  <div class="navbar" id="DesktopBar">     <a href="/"><span class="fas fa-home"></span> Home</a>     <a href="about.html"><span class="fas fa-question-circle"></span> About me</a>     <a href="https://github.com/x-t"><span class="fab fa-github"></span> Github</a>     <a href="/blog/2018.html"><span class="fas fa-rss"></span> Blog</a>     <a href="#" class="showContact1" style="float:right;"><span class="fas fa-id-card"></span> Contact</a>     <a href="#" class="showSupport" style="float:right;"><span class="fas fa-dollar-sign"></span> Support</a> </div>
 
     <div class="c">
-         <div class="Obituary">     <h1>RIP Terry A. Davis</h1>     <p>He was a great programmer and a great thinker.</p>     <p>He suffered from schizophrenia, but that didn't make him any less important.</p>     <p>Although not popular at first, the man who was once medicated and inhibited</p>     <p>was a loving man that brought us all education and entertainment.</p>     <p>From talking through an oracle, now he may talk to God directly.</p>     <a href="/resources/TempleOS.ISO">Recent TempleOS mirror</a>     <br>     <a href="/resources/TempleOSCD-Latest.ISO">Uncompromised TempleOS mirror</a>     <br><br>     <img src="/resources/RIP.jpg" width="226" height="294">     <p>1969 - 2018</p>     <br><br> </div>
-        <h1>cmp</h1>
-        <p>Unprofessional developer and sysadmin</p>
-        <p>Professional hacker (not the cool one)</p>
+        <h1>Source code</h1>
+         <a href="/resources/open_source.png"><img src="/resources/open_source.png"></a> <p><small>Open source at work</small></p>
+        <h2>License</h2>
+        <p>This website is licensed under the BSD-2-Clause license.</p>
+        <p>Read its full legal text <a href="/LICENSE.txt">here</a>.</p>
+        <p>The blog system is not mine, read about it in sources.</p>
+        <h3>Blog</h3>
+        <p>Blog's content licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a></p>
         <br>
-         <a href="/resources/cat.jpg"><img src="/resources/cat.jpg" width="325" height="396"></a>
+        <h2>Sources</h2>
+        <h3>Javascript</h3>
+        <p>main.js - <a href="/resources/main.js">source</a></p>
+        <h3>CSS</h3>
+        <p>style.css - <a href="/resources/style.css">source</a></p>
+        <h3>Pages</h3>
+        <p>Hit Ctrl-U and look at the source.</p>
+        <h3>Analytics</h3>
+        <p>Now that's proprietary :^)</p>
+        <h3>Blog system</h3>
+        <p>The blog system is made by <a href="https://lukesmith.xyz">Luke Smith</a></p>
+        <p>The source code can be found on <a href="https://github.com/lukesmithxyz/lb">Github</a></p>
+        <p>It's licensed under the GPLv3 license.</p>
+        <p>Read the legal text in the repo or <a href="/blog/LICENSE.txt">here</a></p>
+        <h3>Icons</h3>
+        <p>Made by <a href="https://fontawesome.com/">fontawesome</a></p>
+        <h3>Copyright</h3>
+        <p>Images used in the website are owned by their respective owners.</p>
+        <p>I don't know who are they, nor am I assed to look, so no credit is given.</p>
+        <br>
+        <h2>FAQ</h2>
+        <h3>Why PHP?</h3>
+        <p>Started with that, it's pretty easy.</p>
+        <p>Plus I built a lot of my infrastructure using PHP,</p>
+        <p>migrating to something other would just be a pain in the dick.</p>
+        <h3>What's up with the indents?</h3>
+        <p>I use a bunch of PHP includes.</p>
+        <p>Indents for those get messed up in the final page.</p>
+        <h3>Why not release your site as a .zip file or a git repository?</h3>
+        <p>That'd need cleaning up, which I can't bother to do.</p>
+        <p>Also we already use git internally.</p>
+        <h3>Why X license and not Y?</h3>
+        <p>Because I like these licenses.</p>
+        <h3>You're gay</h3>
+        <p>no u</p>
     </div>
      <br> <div class="copyright c">     <p><small>(C) 2018 cmp. <a href="/src">Copy it.</a> I won't be mad.</small></p> </div>
+    <?php include('../resources/copyright.php'); ?>
 </body>
 </html>
