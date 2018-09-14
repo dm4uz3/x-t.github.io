@@ -31,7 +31,7 @@
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;template</title>
+    &lt;title&gt;template&lt;/title&gt;
     &lt;!-- HEAD --&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -53,7 +53,7 @@ function ReadFile(file)
 {
     x = ""
     while ((getline y &lt; file) &gt; 0) {
-        x = x FS y FS "\n"
+        x = x FS y FS "&bsol;n"
     }
     return x
 }
