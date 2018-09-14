@@ -15,6 +15,7 @@ BEGIN {
     r_cat = ReadFile("resources/cat.html")
     r_copyright = ReadFile("resources/copyright.html")
     r_head = ReadFile("resources/stdhead.html")
+    r_terry = ReadFile("resources/terry2.html")
 }
 
 {
@@ -25,5 +26,6 @@ gsub(/<!-- RIP_TERRY -->/, r_ripterry)
 gsub(/<!-- CAT -->/, r_cat)
 gsub(/<!-- COPYRIGHT -->/, r_copyright)
 gsub(/<!-- HEAD -->/, r_head)
+gsub(/<!-- TERRY -->/, r_terry)
 print
 }
