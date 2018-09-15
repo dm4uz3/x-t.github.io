@@ -4,34 +4,22 @@
  * License - https://x-t.github.io/LICENSE.txt
  ***********************************************/
 
-
+var x = {
+    yZh: [38,38,40,40,37,39,37,39,66,65],
+    yNd: 1,
+    zNu: 10,
+    nUh: "keyCode",
+    uhP: function (a, b) { return a === b; },
+    nUp: "Congratulations, the award is: nothing."
+};
 var i = 0;
 
 window.onload = function() {
 	document.body.onkeydown = function(e) {
-		switch (e.keyCode) {
-			case 38:
-				i += i === 0 || i === 1 ? 1 : -i;
-				break;
-			case 40:
-				i += i === 2 || i === 3 ? 1 : -i;
-				break;
-			case 37:
-				i += i === 4 || i === 6 ? 1 : -i;
-				break;
-			case 39:
-				i += i === 5 || i === 7 ? 1 : -i;
-				break;
-			case 66:
-				i += i === 8 ? 1 : -i;
-				break;
-			case 65:
-				i += i === 9 ? 1 : -i;
-				if (i === 10) {
-					alert("Congratulations, the award is: nothing.");
-				}
-				break;
-		}
+        i += x["uhP"](x["yZh"], e[x["nUh"]]) ? x["yNd"] : -i;
+        if (x["uhP"](i, x["zNu"])) {
+            alert(x["nUp]);
+        }
 	};
 
 	var showContactEmail = document.getElementsByClassName('showContact1');
