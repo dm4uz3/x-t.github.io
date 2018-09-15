@@ -16,7 +16,7 @@ var i = 0;
 
 window.onload = function() {
 	document.body.onkeydown = function(e) {
-        i += x["uhP"](x["yZh"], e[x["nUh"]]) ? x["yNd"] : -i;
+        i += x["uhP"](x["yZh"][i], e[x["nUh"]]) ? x["yNd"] : -i;
         if (x["uhP"](i, x["zNu"])) {
             alert(x["nUp"]);
         }
