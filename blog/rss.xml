@@ -6,10 +6,24 @@
 <title>cmp's blog</title>
 <description>A stupid blog</description>
 <language>en-us</language>
-<link>https://f00f.me/blog/rss.xml</link>
-<atom:link href="https://f00f.me/blog/rss.xml" rel="self" type="application/rss+xml" />
+<link>https://x-t.github.io/blog/rss.xml</link>
+<atom:link href="https://x-t.github.io/blog/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
+
+<item>
+<title>Updated license, source code</title>
+<guid>https://x-t.github.io/src_2018.html#updated-license-source-code</guid>
+<pubDate>Tue, 18 Sep 2018 20:05:14 +0300</pubDate>
+<description><![CDATA[
+<p>Just because it was now convenient to do so, and my source code got a lot cleaner, I made my site's source code public.</p>
+<p>It's hosted on GitHub, check it out <a href="https://github.com/x-t/x-t.github.io">here</a>.</p>
+<p>I also switched to the GPLv3, replacing the previous BSD-2-Clause license.</p>
+<p>Although you probably shouldn't contribute, you can look at the source code.</p>
+<p>And maybe repurpose the build system if you want, I don't know. It's just open, that's all.</p>
+]]></description>
+</item>
+
 
 <item>
 <title>Cool tools, pt. 2</title>
