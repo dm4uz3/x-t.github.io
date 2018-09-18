@@ -20,16 +20,24 @@ BEGIN {
     r_comfycat = ReadFile("resources/comfycat.html")
 }
 
+/<!-- DESC / {
+    gsub(/<!-- DESC /, "")
+    gsub(/ -->/, "")
+    gsub(/^[ \t]+/, "", $0)
+    printf "<meta name=\"description\" content=%s>\n", $0
+    next
+}
+
 {
-gsub(/<!-- NOSCRIPT -->/, r_noscript)
-gsub(/<!-- CONTACT -->/, r_contact)
-gsub(/<!-- NAVBAR -->/, r_navbar)
-gsub(/<!-- RIP_TERRY -->/, r_ripterry)
-gsub(/<!-- CAT -->/, r_cat)
-gsub(/<!-- COPYRIGHT -->/, r_copyright)
-gsub(/<!-- HEAD -->/, r_head)
-gsub(/<!-- TERRY -->/, r_terry)
-gsub(/<!-- OSS -->/, r_oss)
-gsub(/<!-- COMFYCAT -->/, r_comfycat)
-print
+    gsub(/<!-- NOSCRIPT -->/, r_noscript)
+    gsub(/<!-- CONTACT -->/, r_contact)
+    gsub(/<!-- NAVBAR -->/, r_navbar)
+    gsub(/<!-- RIP_TERRY -->/, r_ripterry)
+    gsub(/<!-- CAT -->/, r_cat)
+    gsub(/<!-- COPYRIGHT -->/, r_copyright)
+    gsub(/<!-- HEAD -->/, r_head)
+    gsub(/<!-- TERRY -->/, r_terry)
+    gsub(/<!-- OSS -->/, r_oss)
+    gsub(/<!-- COMFYCAT -->/, r_comfycat)
+    print
 }

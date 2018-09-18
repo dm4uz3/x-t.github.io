@@ -3,7 +3,8 @@
 # Set your personal data here:
 rssfile="rss.xml"
 blogfile="src_2018.html"
-website="https://f00f.me/"
+r_blogfile="2018.html"
+website="https://x-t.github.io/"
 indexfile="blogindex.php"
 stylesheet="..\/..\/resources\/style.css" # Characters should be escaped for this variable.
 author="<a href=\"$website\">cmp<\/a>"
@@ -40,7 +41,7 @@ getTitle() { \
 
 postNew() { \
 	mkdir -p "$draftdir"
-	echo -e "<h2 id='$url'>$title</h2>\n<small>[<a href=\"2018.html#$url\">link</a>&mdash;<a href=\"blog/$url.html\">standalone</a>]</small>\n\n<++>" >> "$draftdir"/$url.html && $EDITOR "$draftdir"/$url.html
+	echo -e "<h2 id='$url'>$title</h2>\n<small>[<a href=\"$r_blogfile#$url\">link</a>&mdash;<a href=\"blog/$url.html\">standalone</a>]</small>\n\n<++>" >> "$draftdir"/$url.html && $EDITOR "$draftdir"/$url.html
 	}
 
 finalize() { \
