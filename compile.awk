@@ -18,6 +18,7 @@ BEGIN {
     r_terry = ReadFile("resources/terry2.html")
     r_oss = ReadFile("resources/oss.html")
     r_comfycat = ReadFile("resources/comfycat.html")
+    r_header = ReadFile("resources/header.html")
 }
 
 /<!-- DESC / {
@@ -39,5 +40,6 @@ BEGIN {
     gsub(/<!-- TERRY -->/, r_terry)
     gsub(/<!-- OSS -->/, r_oss)
     gsub(/<!-- COMFYCAT -->/, r_comfycat)
+    gsub(/<!-- HEADER -->/, r_header)
     print
 }

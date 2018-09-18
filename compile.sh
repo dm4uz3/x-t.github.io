@@ -3,6 +3,8 @@
 
 prefix="src"
 
+awk -f compile.awk resources/src_header.html > resources/header.html
+
 if [[ $1 == "--debug" ]]; then
     if [[ $2 != "" ]]; then
         awk -f compile.awk $2 | less
