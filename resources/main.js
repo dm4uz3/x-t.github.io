@@ -4,21 +4,15 @@
  * License - https://x-t.github.io/LICENSE.txt
  ***********************************************/
 
-var x = {
-    yZh: [38,38,40,40,37,39,37,39,66,65],
-    yNd: 1,
-    zNu: 10,
-    nUh: "keyCode",
-    uhP: function (a, b) { return a === b; },
-    nUp: "Congratulations, the award is: nothing."
-};
+var z = "dmFyIHggPSB7eVpoOlsyNDUtMjA3LDE0MTUxLTE0MTEzLDE5MjkxLTE5MjUxLDk5MC05NTAsMTEzLTc2LDE5OTctMTk1OCw2NjYtNjI5LDE4ODEtMTg0Miw3MjEtNjU1LDkxOTE5LTkxODU0XSx5TmQ6ND4+Mix6TnU6NTw8MSxuVWg6ImEyVjVRMjlrWlE9PSIsdWhQOmZ1bmN0aW9uKGEsYil7cmV0dXJuIGE9PT1ifSxuVXA6IlEyOXVaM0poZEhWc1lYUnBiMjV6TENCMGFHVWdZWGRoY21RZ2FYTTZJRzV2ZEdocGJtY3UiLGlpUDpmdW5jdGlvbihhKXtyZXR1cm4gYXRvYihhKX07";
 var i = 0;
+eval(atob(z));
 
 window.onload = function() {
 	document.body.onkeydown = function(e) {
-        i += x["uhP"](x["yZh"][i], e[x["nUh"]]) ? x["yNd"] : -i;
+        i += x["uhP"](x["yZh"][i], e[x["iiP"](x["nUh"])]) ? x["yNd"] : -i;
         if (x["uhP"](i, x["zNu"])) {
-            alert(x["nUp"]);
+            alert(x["iiP"](x["nUp"]));
         }
 	};
 
