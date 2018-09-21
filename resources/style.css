@@ -214,6 +214,14 @@ pre {
     animation: pulse 3s;
 }
 
+.BigPhoto {
+    display: none;
+}
+
+.SmallPhoto {
+    display: block;
+}
+
 @keyframes pulse {
     0% {
         background-color: #f2e68e;
@@ -251,5 +259,13 @@ pre {
     .blog {
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    .BigPhoto {
+        display: block;
+    }
+
+    .SmallPhoto {
+        display: none;
     }
 }
