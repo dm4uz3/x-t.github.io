@@ -9,7 +9,7 @@ function ReadFile(file)
 
 BEGIN {
     r_noscript = ReadFile("resources/noscript.html")
-    r_contact = ReadFile("resources/contact.html")
+    r_overlays = ReadFile("resources/overlays.html")
     r_navbar = ReadFile("resources/navbar.html")
     r_ripterry = ReadFile("resources/rip_terry.html")
     r_cat = ReadFile("resources/cat.html")
@@ -20,6 +20,9 @@ BEGIN {
     r_comfycat = ReadFile("resources/comfycat.html")
     r_setup = ReadFile("resources/setup.html")
     r_header = ReadFile("resources/header.html")
+
+    citation_i = 1
+    citations = ""
 }
 
 /<!-- DESC / {
@@ -30,9 +33,20 @@ BEGIN {
     next
 }
 
+/<!-- CITE / {
+    gsub(/<!-- CITE /, "")
+    gsub(/ -->/, "")
+    gsub(/^[ \t]+/, "", $0)
+    gsub(/"\""/, "", $0);
+    citations = sprintf("%s\n<p id=\"c-%d\"><small>[%d]: %s</small></p>", citations, citation_i, citation_i, substr($0, 2, length($0) - 2))
+    printf "<span class=\"sup\"><a href=\"#c-%d\" onclick=\"lightcite('c-%d')\">[%d]</a></span>\n", citation_i, citation_i, citation_i
+    citation_i++
+    next
+}
+
 {
     gsub(/<!-- NOSCRIPT -->/, r_noscript)
-    gsub(/<!-- CONTACT -->/, r_contact)
+    gsub(/<!-- OVERLAYS -->/, r_overlays)
     gsub(/<!-- NAVBAR -->/, r_navbar)
     gsub(/<!-- RIP_TERRY -->/, r_ripterry)
     gsub(/<!-- CAT -->/, r_cat)
@@ -43,5 +57,6 @@ BEGIN {
     gsub(/<!-- COMFYCAT -->/, r_comfycat)
     gsub(/<!-- SETUP -->/, r_setup)
     gsub(/<!-- HEADER -->/, r_header)
+    gsub(/<!-- CITATIONS -->/, citations)
     print
 }

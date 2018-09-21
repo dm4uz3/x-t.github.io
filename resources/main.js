@@ -1,12 +1,28 @@
 /***********************************************
  * This file is a part of the f00f.me project
  * More info - https://x-t.github.io/source.html
- * License - https://x-t.github.io/LICENSE.txt
+ * License - https://x-t.github.io/COPYING.md
  ***********************************************/
 
 var z = "dmFyIHggPSB7eVpoOlsyNDUtMjA3LDE0MTUxLTE0MTEzLDE5MjkxLTE5MjUxLDk5MC05NTAsMTEzLTc2LDE5OTctMTk1OCw2NjYtNjI5LDE4ODEtMTg0Miw3MjEtNjU1LDkxOTE5LTkxODU0XSx5TmQ6ND4+Mix6TnU6NTw8MSxuVWg6ImEyVjVRMjlrWlE9PSIsdWhQOmZ1bmN0aW9uKGEsYil7cmV0dXJuIGE9PT1ifSxuVXA6IlEyOXVaM0poZEhWc1lYUnBiMjV6TENCMGFHVWdZWGRoY21RZ2FYTTZJRzV2ZEdocGJtY3UiLGlpUDpmdW5jdGlvbihhKXtyZXR1cm4gYXRvYihhKX19Ow==";
 var i = 0;
 eval(atob(z));
+
+function
+lightcite (
+    cite
+    )
+/*
+ * Lights the citation
+ * @param str cite ID of the HTMLElement that has the citation
+ */
+{
+    var C = document.getElementById(cite);
+    C.classList.add("pulseanim");
+    setTimeout(function() {
+        C.classList.remove("pulseanim");
+    }, 4000);
+}
 
 window.onload = function() {
 	document.body.onkeydown = function(e) {
