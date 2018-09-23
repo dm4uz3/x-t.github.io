@@ -37,7 +37,6 @@ BEGIN {
     gsub(/<!-- CITE /, "")
     gsub(/ -->/, "")
     gsub(/^[ \t]+/, "", $0)
-    gsub(/"\""/, "", $0);
     citations = sprintf("%s\n<p id=\"c-%d\"><small>[%d]: %s</small></p>", citations, citation_i, citation_i, substr($0, 2, length($0) - 2))
     printf "<span class=\"sup\"><a href=\"#c-%d\" onclick=\"lightcite('c-%d')\">[%d]</a></span>\n", citation_i, citation_i, citation_i
     citation_i++
